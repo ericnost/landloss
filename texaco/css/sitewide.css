@@ -1,40 +1,21 @@
-
 .navbar-default .navbar-toggle:hover {
   background-color: #636363;
 
 }
 .navbar-default .navbar-brand {
-  color: white;
-  font-family: 'Bitter', serif;
+  font-family: 'PT Serif', serif;
   font-size: 30px;
 }
 
 .navbar-default .navbar-brand:hover {
-  color: #fef0d9;
+  text-decoration: underline;
 }
 
 .navbar-default .navbar-nav > li > a  {
-  color: white;
-  font-family: 'Bitter', serif;
+  font-family: 'PT Serif', serif;
   font-size: 20px;
 }
 
-.navbar-default .navbar-nav:hover > li > a:hover  {
-  color: #fef0d9;
-
-}
-
-.navbar-collapse {
-  background-color: #636363;
-
-}
-.navbar-right {
-  padding-right: 10px;
-}
-
-.navbar-header {
-  background-color: #636363;
-}
 
 h4 {
   font-size: 20px;
@@ -66,7 +47,7 @@ li{
 
 body {
     background-color: #fcfcfc;
-  font-family: 'Bitter', serif;
+    font-family: 'PT Serif', serif;
   max-width: 100%;
   overflow-x: hidden;
 }

@@ -6,7 +6,7 @@
 			<link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
 			<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>
-			<meta name="keywords" content="maps,cartography, hazardous waste trade"/>
+			<meta name="keywords" content="maps,land loss, louisiana"/>
 			<title>Exploring Land Loss</title>
 
 			<!--put Bootstrap stylesheet links above style.css-->
@@ -29,7 +29,7 @@
 
 
 </head>
-    <nav class="navbar navbar-default navbar-fixed-top main-navbar"> <!--creates navbar-->
+        <nav class="navbar navbar-default navbar-fixed-top main-navbar"> <!--creates navbar-->
             <div class="navbar-header"> <!--creates the navbar header-->
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span><!--used for screen readers for accessibility-->
@@ -42,14 +42,11 @@
                 <div class="collapse navbar-collapse" id="nav1">
      
                   <ul class="nav navbar-nav navbar-right">
-                    <li><a href="http://geography.wisc.edu/students/profile.php?p=1025">About</a></li>
-                    
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Stories<span class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li><a href="index.html">Exploring Land Loss</a></li>
                         <li><a href="texaco/index.html">Texaco Canals</a></li>
-                        <li><a href="/NewOrleans/censusViewer/index.html">New Orleans Census Viewer</a></li>
                       </ul>
                     </li>
 
@@ -57,6 +54,7 @@
                 </div><!-- /.navbar-collapse -->
 
     </nav><!--end navigation bar-->
+
 	<body>
 
   <div class="center">
@@ -247,7 +245,7 @@ function setMap(){
 			.datum(topojson.feature(coast, coast.objects.states)) 
 			.attr("class", "states") //class name for styling 
 			.attr("d", path); //project data as geometry in svg
-
+		console.log(riversLA)
 		var rivers = map.append("path")
 	      .datum(topojson.feature(riversLA, riversLA.objects.riversLA2))
 	      .attr("class", "rivers")
